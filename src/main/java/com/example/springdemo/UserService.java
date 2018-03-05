@@ -13,12 +13,9 @@ public class UserService {
     UserRepository userRepository;
 
 
-    public void addUser(String name) {
-
-        User user = new User();
-        user.setName(name);
+    public void addUser(User user) {
         userRepository.saveAndFlush(user);
-        log.info("user :" + user.toString() + "added");
+        log.info(user.toString() + " added");
     }
 
 

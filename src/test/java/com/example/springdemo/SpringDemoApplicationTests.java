@@ -26,10 +26,6 @@ public class SpringDemoApplicationTests {
 	public void contextLoads() {
 	}
 
-	@Test
-	public void add(){
-	userService.addUser("test");
-	}
 
 	@Test
 	public void get(){
